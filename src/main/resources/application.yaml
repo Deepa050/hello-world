@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://myUserAdmin:abc123@10.0.0.60/mydb
