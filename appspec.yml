@@ -14,7 +14,7 @@ hooks:
   BeforeInstall:
     - location: scripts/package.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 300
