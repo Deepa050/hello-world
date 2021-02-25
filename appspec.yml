@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /target/hello-world-1.0.0.jar
     destination: /home/ubuntu/application
 #hooks:
 #  BeforeInstall:
