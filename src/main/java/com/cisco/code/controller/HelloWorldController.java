@@ -19,7 +19,7 @@ public class HelloWorldController {
 
     @RequestMapping
     String home() {
-        return "Hello World Spring Boot from instance1!";
+        return "Hello World Spring Boot from ci-cd instance!";
     }
 
     @GetMapping("/echo")
