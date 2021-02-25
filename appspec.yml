@@ -11,6 +11,10 @@ permissions:
     group: ubuntu
 
 hooks:
+  BeforeInstall:
+    - location: scripts/package.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 300
