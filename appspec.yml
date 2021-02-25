@@ -1,13 +1,13 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/hello-world-1.0.0.jar
-    destination: /home/ubuntu/application
-hooks:
-  Install:
-    - location: scripts/start.sh
-      timeout: 300
-      runas: root
+  - source: /
+    destination: /home/ubuntu/
+#hooks:
+#  Install:
+#    - location: scripts/start.sh
+#      timeout: 300
+#      runas: root
 #  AfterInstall:
 #    - location: scripts/change_permissions.sh
 #      timeout: 300
