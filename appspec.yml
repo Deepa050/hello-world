@@ -2,12 +2,23 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/
-#hooks:
-#  Install:
-#    - location: scripts/start.sh
-#      timeout: 300
-#      runas: root
+    destination: /home/ubuntu/hello-world/
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+
+hooks:
+  ApplicationStart:
+    - location: scripts/start.sh
+      timeout: 300
+      runas: ubuntu
+  ApplicationStop:
+    - location: scripts/stop.sh
+      timeout: 300
+      runas: ubuntu
 #  AfterInstall:
 #    - location: scripts/change_permissions.sh
 #      timeout: 300
