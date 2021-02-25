@@ -1,5 +1,2 @@
 com/cisco/code/controller/HelloWorldController.class
-com/cisco/code/ResourceNotFoundException.class
-com/cisco/code/repository/HelloWorldRespository.class
 com/cisco/code/HelloWorld.class
-com/cisco/code/model/User.class
