@@ -3,11 +3,11 @@ os: linux
 files:
   - source: /target/hello-world-1.0.0.jar
     destination: /home/ubuntu/application
-#hooks:
-#  BeforeInstall:
-#    - location: scripts/install_dependencies.sh
-#      timeout: 300
-#      runas: root
+hooks:
+  Install:
+    - location: scripts/start.sh
+      timeout: 300
+      runas: root
 #  AfterInstall:
 #    - location: scripts/change_permissions.sh
 #      timeout: 300
